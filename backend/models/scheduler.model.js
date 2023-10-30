@@ -43,15 +43,27 @@ module.exports = (sequelize, Sequelize) => {
         followingid: { 
             type: Sequelize.INTEGER 
         },
+        orderid: {
+            type: Sequelize.INTEGER,
+        },
+        machineid: {
+            type: Sequelize.INTEGER,
+        },
+        lineid: {
+            type: Sequelize.INTEGER,
+        },
+        parentid: {
+            type: Sequelize.INTEGER
+        },
         createdAt: {
             type: Sequelize.DATE,
             field: 'created_at'
-          },
+        },
     
-          updatedAt: {
+        updatedAt: {
             type: Sequelize.DATE,
             field: 'updated_at'
-          }
+        }
     });
     return SchedulerEvents;
 };
